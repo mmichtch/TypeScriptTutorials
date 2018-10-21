@@ -23,6 +23,7 @@ namespace HellowWorldTypeScript
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseStaticFiles();
             }
 
             app.Run(async (context) =>
