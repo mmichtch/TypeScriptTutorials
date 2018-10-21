@@ -6,12 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="bundleconfig.json" />
     <Content Remove="wwwroot\Scripts\Car.ts" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <_ContentIncludedByDefault Remove="bundleconfig.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +15,7 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.5" />
+    <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="1.0.163" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,10 +24,7 @@
 
   <ItemGroup>
     <Folder Include="Views\Shared\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="bundleconfig.json" />
+    <Folder Include="wwwroot\Lib\" />
   </ItemGroup>
 
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
