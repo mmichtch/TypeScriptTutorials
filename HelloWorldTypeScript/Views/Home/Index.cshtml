@@ -3,8 +3,13 @@
     ViewData["Title"] = "Index";
 }
 
-@section Scripts{ 
+@section Scripts{
+<environment names="Development">
     <script src="~/Scripts/Car.js"></script>
+</environment>
+<environment names="Staging,Production">
+    <script src="~/Scripts/Car.min.js"></script>
+</environment>
 }
 
 <h2>Index</h2>
